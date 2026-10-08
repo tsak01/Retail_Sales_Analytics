@@ -56,4 +56,4 @@ Superstore Sales | Rows: 9,994 | Columns: 18 | Region: United States
 
 ## Power BI Dashboard
 
-![Superstore Sales Dashboard](screenshots/dashboard.jpg)
+![Superstore Sales Dashboard](screenshot/dashboard.jpg)
