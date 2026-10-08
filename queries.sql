@@ -1,5 +1,5 @@
 -- ================================================
--- Superstore Sales Analysis | MySQL
+-- Retail_Sales_Analytics | MySQL
 -- ================================================
 -- Query 1: Top 10 sub-categories by revenue
 SELECT Sub_Category,

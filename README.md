@@ -1,36 +1,54 @@
-# Superstore Sales Analysis — MySQL & Excel
+# Retail Sales Performance Analytics — MySQL & Excel
 
-## Overview
-End-to-end sales data analysis on 9,994 rows of US retail data using MySQL and Excel.
-Covers the core SQL patterns that appear in 80% of data analyst interviews.
+## 📊 Overview
 
-## Skills Demonstrated
+An end-to-end sales and profitability analysis using the Superstore dataset. The project combines MySQL and Power BI to analyze sales performance, profitability, customer segments, regions, categories, and product-level trends.
+
+The goal was to turn raw transactional data into actionable business insights through SQL analysis and an interactive Power BI dashboard.
+
+## SQL Analysis
+SQL was used to answer business-focused questions such as:
+- Which categories and sub-categories generate the most sales?
+- Which products and categories are most profitable?
+- Which regions contribute the most revenue?
+- How does profitability vary across customer segments?
+- How do discounts relate to profitability?
+- Which areas may require further investigation?
+
+## Functions Used
 - GROUP BY, ORDER BY, HAVING, LIMIT
 - Window Functions: LAG(), ROW_NUMBER() OVER (PARTITION BY)
 - CTEs (WITH clause)
 - Date functions in MySQL (DATE_FORMAT)
 - Excel: PivotTables, dynamic charts, Slicers, KPI cards
 
-## Key Findings
+## 💡Key Findings
 1. Phones lead revenue at $330k across 889 orders
 2. West region dominates with $725k — 31% of total revenue
 3. Binders have highest order volume at 1,523 orders
 4. All 4 regions exceed $100k revenue threshold
 
+The analysis highlights differences between sales performance and profitability, showing that high sales volume does not necessarily translate into high profit.
+
+The dashboard allows users to interactively filter results by dimensions such as year, region, category, and customer segment to investigate performance from different perspectives.
+
 ## Project Structure
-- queries.sql — All 5 analysis queries, MySQL compatible
-- screenshots/ — Query result screenshots
-- README.md — Project documentation
+Superstore-Sales-Analysis/
+│
+├── superstore.csv
+├── queries.sql
+├── Superstore_Sales_Profitability.pbix
+├── README.md
 
 ## How to Run
 1. Import superstore.csv into MySQL 8.0+
 2. Run queries from queries.sql in VS Code with SQLTools extension
-3. Export results to CSV for Excel dashboard
+3. Export results to CSV for Powerbi dashboard
 
 ## Tools Used
 - MySQL 8.0
 - VS Code + SQLTools extension
-- Excel (PivotTables, Charts, Slicers)
+- PowerBI
 - Git + GitHub
 
 ## Dataset
