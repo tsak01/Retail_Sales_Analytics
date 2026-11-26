@@ -1,15 +1,17 @@
 -- ================================================
 -- Retail_Sales_Analytics | MySQL
 -- ================================================
--- Query 1: Top 10 sub-categories by revenue
+-- Query 1: Top 10 sub-categories by revenue, with profit margin
 SELECT Sub_Category,
     COUNT(*) AS orders,
     ROUND(SUM(Sales), 2) AS total_revenue,
-    ROUND(SUM(Sales) / SUM(Sales) * 100, 2) AS profit_margin_pct
+    ROUND(SUM(Profit), 2) AS total_profit,
+    ROUND(SUM(Profit) / SUM(Sales) * 100, 2) AS profit_margin_pct
 FROM superstore
 GROUP BY Sub_Category
 ORDER BY total_revenue DESC
 LIMIT 10;
+
 -- Query 2: Regions with revenue greater than $100k
 SELECT Region,
     ROUND(SUM(Sales), 2) AS revenue,
